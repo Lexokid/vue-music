@@ -1,0 +1,45 @@
+[{
+  "iconURL": "/static/afs.png",
+  "menuItem": "我的消息",
+  "disc": ""
+}, {
+  "iconURL": "/static/ag1.png",
+  "menuItem": "会员中心",
+  "disc": ""
+}, {
+  "iconURL": "/static/afy.png",
+  "menuItem": "商城",
+  "disc": ""
+},{
+  "iconURL": "/static/afo.png",
+  "menuItem": "在线听歌免流量",
+  "disc": ""
+},{
+  "iconURL": "/static/afp.png",
+  "menuItem": "我的好友",
+  "disc": ""
+},{
+  "iconURL": "/static/afu.png",
+  "menuItem": "附近的人",
+  "disc": ""
+},{
+  "iconURL": "/static/afx.png",
+  "menuItem": "个性换肤",
+  "disc": "官方红"
+},{
+  "iconURL": "/static/afq.png",
+  "menuItem": "听歌识曲",
+  "disc": ""
+},{
+  "iconURL": "/static/afz.png",
+  "menuItem": "定时停止播放",
+  "disc": ""
+},{
+  "iconURL": "/static/afk.png",
+  "menuItem": "音乐闹钟",
+  "disc": ""
+},{
+  "iconURL": "/static/ag0.png",
+  "menuItem": "驾驶模式",
+  "disc": ""
+}]

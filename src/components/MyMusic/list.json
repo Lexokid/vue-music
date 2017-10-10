@@ -1,0 +1,21 @@
+[{
+  "iconURL": "/static/wz.png",
+  "menuItem": "本地音乐",
+  "disc": "0"
+}, {
+  "iconURL": "/static/wk.png",
+  "menuItem": "最近播放",
+  "disc": "0"
+}, {
+  "iconURL": "/static/w_.png",
+  "menuItem": "下载管理",
+  "disc": "0"
+},{
+  "iconURL": "/static/x2.png",
+  "menuItem": "我的电台",
+  "disc": "0"
+},{
+  "iconURL": "/static/w3.png",
+  "menuItem": "我的收藏",
+  "disc": "0"
+}]
