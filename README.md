@@ -23,6 +23,7 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 ```
+还需配合[网易云音乐的api](https://github.com/Binaryify/NeteaseCloudMusicApi)来使用
 
 ## 在线预览
 

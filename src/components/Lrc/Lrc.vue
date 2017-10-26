@@ -58,11 +58,11 @@ export default {
     currentLyric() {
       // this.translateY += -this.$refs.p[this.currentLyric].offsetHeight;
       this.scrollTop = this.$refs.p[this.currentLyric].offsetTop;
-      // const start = this.$refs.lrcwrap.scrollTop;
+      const start = this.$refs.lrcwrap.scrollTop;
       const end = this.scrollTop - (this.$refs.lrcwrap.clientHeight / 2);
-      this.$refs.lrcwrap.scrollTop = end;
+      // this.$refs.lrcwrap.scrollTop = end;
       // 在手机上过渡效果惨不忍睹
-      // this.scroll(this.$refs.lrcwrap, start, end);
+      this.scroll1(this.$refs.lrcwrap, start, end);
     },
   },
   methods: {
@@ -94,6 +94,19 @@ export default {
         }
       }, 1000 / fps);
     },
+    scroll1(elm, start, end, fps = 60, time = 500) {
+      const distance = end - start;
+      let count = fps * (time / 1000);
+      const dis = distance / count;
+      function updateFrame() {
+        count -= 1;
+        elm.scrollTop += dis;
+        if (count > 0) {
+          window.requestAnimationFrame(updateFrame);
+        }
+      }
+      window.requestAnimationFrame(updateFrame);
+    },
   },
 };
 </script>
@@ -105,10 +118,10 @@ export default {
   height: calc(80vh - 50px);
   overflow-y: scroll;
   .lrc {
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: 50% 0;
-    transition: transform .5s linear;
+    transition: transform 0.5s linear;
     p {
       padding: 10px 10%;
       line-height: 18px;
